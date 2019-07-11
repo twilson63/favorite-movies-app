@@ -1,0 +1,24 @@
+{
+  "favorites": [
+    {
+      "id": 1,
+      "title": "Sweet Home Alabama"
+    },
+    {
+      "id": 2,
+      "title": "Ghostbusters"
+    },
+    {
+      "id": 4,
+      "title": "Batman"
+    },
+    {
+      "id": 5,
+      "title": "Avengers"
+    },
+    {
+      "id": 6,
+      "title": "Superman"
+    }
+  ]
+}
