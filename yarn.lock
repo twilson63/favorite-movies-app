@@ -2,6 +2,17 @@
 # yarn lockfile v1
 
 
+"@auth0/auth0-spa-js@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@auth0/auth0-spa-js/-/auth0-spa-js-1.0.2.tgz#6049e5cbc1a26388d4db0ea0323bc5ea7c0fc210"
+  integrity sha512-r8D48VcjjlmM2VQ4uG5wkiMP4LCg39/I2DGk4R6t0anbQCP/PfF/n/kIQnNWfa6PDSkKxP6UVfthjPU3TKN0Cw==
+  dependencies:
+    es-cookie "^1.2.0"
+    fast-text-encoding "^1.0.0"
+    qs "^6.5.1"
+    ts-polyfill "^3.0.1"
+    unfetch "^4.1.0"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.0.0 <7.4.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0.tgz#06e2ab19bdb535385559aabb5ba59729482800f8"
@@ -1490,6 +1501,11 @@ core-js@^2.4.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.9.tgz#6b4b214620c834152e179323727fc19741b084f2"
   integrity sha512-HOpZf6eXmnl7la+cUdMnLvUxKNqLUzJvgIziQ0DiF3JwSImNphIqdGqzj6hIKyX04MmV0poclQ7+wjWvxQyR2A==
 
+core-js@^3.1.3:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.1.4.tgz#3a2837fc48e582e1ae25907afcd6cf03b0cc7a07"
+  integrity sha512-YNZN8lt82XIMLnLirj9MhKDFZHalwzzrL9YLt6eb0T5D0EDl4IQ90IGkua8mHbnxNrkj1d8hbdizMc0Qmg1WnQ==
+
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -2038,6 +2054,11 @@ es-abstract@^1.12.0, es-abstract@^1.5.1:
     is-regex "^1.0.4"
     object-keys "^1.0.12"
 
+es-cookie@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/es-cookie/-/es-cookie-1.2.0.tgz#1f942d37f67ebc27739aa3f35cf9432cf2ee3ae9"
+  integrity sha512-Rq23x7fV2NRhDbYHA+ebMUHJGyrHWtLd+xFoQ+Tq5kpsAv6FmqpC/SFdDpFJWiwNW7XUhG3GDxVKymDz7KxSRQ==
+
 es-to-primitive@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/es-to-primitive/-/es-to-primitive-1.2.0.tgz#edf72478033456e8dda8ef09e00ad9650707f377"
@@ -2212,6 +2233,11 @@ fast-levenshtein@~2.0.4:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
+
+fast-text-encoding@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/fast-text-encoding/-/fast-text-encoding-1.0.0.tgz#3e5ce8293409cfaa7177a71b9ca84e1b1e6f25ef"
+  integrity sha512-R9bHCvweUxxwkDwhjav5vxpFvdPGlVngtqmx4pIZfSUhM/Q4NiIUHB456BAf+Q1Nwu3HEZYONtu+Rya+af4jiQ==
 
 fastparse@^1.1.1:
   version "1.1.2"
@@ -4207,6 +4233,11 @@ q@^1.1.2:
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
 
+qs@^6.5.1:
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
+  integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
+
 qs@~6.5.2:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
@@ -5092,6 +5123,13 @@ trim-right@^1.0.1:
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
   integrity sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=
 
+ts-polyfill@^3.0.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/ts-polyfill/-/ts-polyfill-3.5.1.tgz#2b550f4e405b78bb36c68415f203e5e11de1d8f1"
+  integrity sha512-IrwtFfM7ryDo3bM7c23KRXVaTCKy7Lwfl1hXkuorpBnvSffSuoD474qBPX6dggH2/H2C10zaYYmZiMia2oDJUw==
+  dependencies:
+    core-js "^3.1.3"
+
 tty-browserify@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/tty-browserify/-/tty-browserify-0.0.0.tgz#a157ba402da24e9bf957f9aa69d524eed42901a6"
@@ -5140,6 +5178,11 @@ uncss@^0.17.0:
     postcss "^7.0.16"
     postcss-selector-parser "6.0.2"
     request "^2.88.0"
+
+unfetch@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/unfetch/-/unfetch-4.1.0.tgz#6ec2dd0de887e58a4dee83a050ded80ffc4137db"
+  integrity sha512-crP/n3eAPUJxZXM9T80/yv0YhkTEx2K1D3h7D1AJM6fzsWZrxdyRuLN0JH/dkZh1LNH8LxCnBzoPFCPbb2iGpg==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"

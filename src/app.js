@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Router } from '@reach/router'
+import { useAuth0 } from './react-auth0-wrapper'
 
 // pages
 import Start from './pages/start'
@@ -17,7 +18,26 @@ export default function App(props) {
       <EditFavorite path="/favorites/:id/edit" />
       <AddFavorite path="/favorites/new" />
       <ShowFavorite path="/favorites/:id" />
-      <Favorites path="/favorites" />
+      <PrivateRoute component={Favorites} path="/favorites" />
     </Router>
   )
+}
+
+
+function PrivateRoute({component: Component, path, ...rest}) {
+
+  const {isAuthenticated, loginWithRedirect} = useAuth0()
+  
+  useEffect(() => {
+    const fn = async () => {
+      if (!isAuthenticated) {
+        await loginWithRedirect({
+          appState: { targetUrl: path }
+        });
+      }
+    };
+    fn();
+  }, [isAuthenticated, loginWithRedirect, path]);
+
+  return isAuthenticated ? <Component path={path} {...rest} /> : null;
 }
